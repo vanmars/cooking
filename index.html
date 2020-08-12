@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Cooking Conversions</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="jumbotron text-center">Welcome to the Cooking Units Converter!</h1>
+    <div class ="card-group">
+      <!-- Cups to Pints Form -->
+      <div class ="card shadow text-center">
+        <div class="card-header">
+          Cups to Pints Converter
+        </div>
+        <div class="card-body">
+          <form id="cups-form">
+            <div class="form-group">
+              <label for="cups" class="card-text">Cup(s)</label>
+              <input id="cups" name="cups" type="text">
+            </div>
+            <button type="submit" class="btn btn-info">Convert to Pints</button>
+          </form>
+          <div  class="m-3">
+            <p>= <span id="pints-result"></span> pint(s)</p>
+          </div>
+        </div>
+      </div>
+      <!-- Pints to Quarts Form -->
+      <div class ="card shadow text-center">
+        <div class="card-header">
+          Pints to Quarts Converter
+        </div>
+        <div class="card-body">
+          <form id="pints-form">
+            <div class="form-group">
+              <label for="pints">Pint(s)</label>
+              <input id="pints" name="pints" type="text">
+            </div>
+            <button type="submit" class="btn btn-info">Convert to Quarts</button>
+          </form>
+          <div  class="m-3">
+            <p>= <span id="quarts-result"></span> quart(s)</p>
+          </div>
+        </div>
+      </div>
+      <!-- Quarts to Gallons Form -->
+      <div class ="card shadow text-center">
+        <div class="card-header">
+          Quarts to Gallons Converter
+        </div>
+        <div class="card-body">
+          <form id="quarts-form">
+            <div class="form-group">
+              <label for="quarts">Quart(s)</label>
+              <input id="quarts" name="quarts" type="text">
+            </div>
+            <button type="submit" class="btn btn-info">Convert to Gallons</button>
+          </form>
+          <div  class="m-3">
+            <p>= <span id="gallons-result"></span> gallon(s)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
